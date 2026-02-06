@@ -1,12 +1,16 @@
-import React from 'react';
+import foto1 from './foto1.jpg'; // Files were created as .jpg in step 416 git status? No, verify files exist.
+import foto2 from './foto2.jpg';
+import foto3 from './foto3.jpg';
+import foto4 from './foto4.jpg';
+import foto5 from './foto5.jpg';
 
 export default function PhotoGallery() {
     // Placeholder images - User can replace these URLs or file paths
     const photos = [
-        { id: 1, src: "src/components/foto1.JPG", caption: "Nuestro primer viaje" },
-        { id: 2, src: "src/components/foto2.JPG", caption: "Primer matri juntos" },
-        { id: 3, src: "src/components/foto3.JPG", caption: "Simplemente tú y yo" },
-        { id: 4, src: "src/components/foto4.JPG", caption: "Te amo ❤️" },
+        { id: 1, src: foto1, caption: "Nuestro primer viaje" },
+        { id: 2, src: foto2, caption: "Primer matri juntos" },
+        { id: 3, src: foto3, caption: "Simplemente tú y yo" },
+        { id: 4, src: foto4, caption: "Te amo ❤️" },
     ];
 
     return (
@@ -16,7 +20,7 @@ export default function PhotoGallery() {
             {/* Featured Photo */}
             <div className="featured-photo">
                 <img
-                    src="src/components/foto5.JPG"
+                    src={foto5}
                     alt="Foto Principal"
                 />
                 <p className="featured-caption">El día que todo comenzó... ✨</p>
